@@ -1,0 +1,21 @@
+Version 1.1
+- Los paracaidas funcionan como una vida, cuando se golpea
+pierde uno, si no tiene mas, muere (pasa a estado muerto)
+
+- tiene una cantidad maxima de paracaidas, por lo cual no puede agarrar
+tantos como quiera, tope de vidas maximas
+
+- cuando agarra un bonus (se vera como), se llama la metodo "enlentecer"
+y divide su velocidad a la mitad, pasando al estado "PersonajeLento"
+
+- cuando lo golpean pasan 3 escenarios:
+	- Era un PersonajeLento -> vuelve a PersonajeNormal y no pierde paracaidas
+	- Era un PersonajeNormal con mas de un paracaidas -> pierde un paracaidas
+	- Era un PersonajeNormal con un solo paracaidas   -> muere
+	
+- Falta manejar el sistema de puntos o como se determina quien gana
+
+- en la clase que maneja el desarrollo del programa, se deberia manejar el hecho de que hacer
+si esta muerto, eso escapa del personaje
+
+- falta ver contra QUE se choca
